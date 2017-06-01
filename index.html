@@ -29,7 +29,10 @@
 
   <script>
     backboneReady(() => {
-      new AppView();
+      new AppView().render();
+      new SearchView().render();
+      new VideoPlayerView().render();
+      // new VideoListEntryView().render();
     });
   </script>
 

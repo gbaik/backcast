@@ -4,13 +4,16 @@ var AppView = Backbone.View.extend({
 
   initialize: function() {
     this.videos = new Videos();
-    this.view = new VideoListView({collection: this.videos});
-    this.render();
+    this.render();  
   },
   
 
   render: function() {
     this.$el.html(this.template());
+    console.log('this is the parent object of AppView ', this);
+    this.view = new VideoListView({collection: this.videos}); 
+    //this.currentVideo = new 
+    this.search = new SearchView();
     return this;
   },
 

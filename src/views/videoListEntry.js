@@ -1,4 +1,5 @@
 var VideoListEntryView = Backbone.View.extend({
+  // el: '.video-list-entry',
 
   initialize: function() {
     this.render();
